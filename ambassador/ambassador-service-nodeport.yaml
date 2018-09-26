@@ -5,5 +5,8 @@ metadata:
 spec:
   type: NodePort
   ports:
-
+  - protocol: TCP
+    port: 80
+    targetPort: 8877
+  selector:
     service: ambassador
